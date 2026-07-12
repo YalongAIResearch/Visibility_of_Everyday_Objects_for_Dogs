@@ -12,7 +12,7 @@ Neitz, J., Geist, T., & Jacobs, G. H.
 Visual Neuroscience, 1989.
 
 ## 1. Paper Summary
-The 1989 paper by Neitz et al. investigates canine color vision through behavioral discrimination experiments on three domestic dogs. Using increment-threshold spectral sensitivity measurements and direct color-matching tests, the authors determined that dogs possess two classes of cone photopigments with peak sensitivities around 429 nm (short-wavelength, blue-sensitive) and 555 nm (longer-wavelength). This results in dichromatic color vision, allowing dogs to distinguish blue-yellow differences effectively while struggling with red-green distinctions—similar to human deuteranopia (red-green color blindness). The study refutes simplistic claims that dogs see no color and provides quantitative evidence of their limited but functional color perception.<grok-card data-id="bcf289" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card><grok-card data-id="3090f4" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>
+The 1989 paper by Neitz et al. investigates canine color vision through behavioral discrimination experiments on three domestic dogs. Using increment-threshold spectral sensitivity measurements and direct color-matching tests, the authors determined that dogs possess two classes of cone photopigments with peak sensitivities around 429 nm (short-wavelength, blue-sensitive) and 555 nm (longer-wavelength). This results in dichromatic color vision, allowing dogs to distinguish blue-yellow differences effectively while struggling with red-green distinctions—similar to human deuteranopia (red-green color blindness). The study refutes simplistic claims that dogs see no color and provides quantitative evidence of their limited but functional color perception.
 
 ## 2. Why This Paper Is Related to My Project
 This paper supplies the biological foundation for simulating dog-like vision in a computer-vision system. My project uses image processing to approximate dichromatic perception and quantify object visibility (via brightness and color contrast) against backgrounds. Understanding the two-cone system directly informs the color transformation step in my prototype, enabling realistic simulation rather than crude grayscale conversion. It grounds the project in empirical science while allowing measurable, reproducible computer-vision outputs.
@@ -31,7 +31,7 @@ I will use at least these two (with plans for more):
 **1. Brightness / Luminance Approximation**  
 For an RGB image:  
 \[ \text{Brightness} = 0.299R + 0.587G + 0.114B \]  
-This weights channels to approximate perceived luminance, crucial for simulating dog vision where brightness cues dominate in low-color-discrimination scenarios. Applied per-pixel or per-ROI.<grok-card data-id="6fcc7c" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>
+This weights channels to approximate perceived luminance, crucial for simulating dog vision where brightness cues dominate in low-color-discrimination scenarios. Applied per-pixel or per-ROI.
 
 **2. Brightness Contrast**  
 \[ \text{Brightness Contrast} = |\text{Average Object Brightness} - \text{Average Background Brightness}| \]  
