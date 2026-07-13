@@ -26,7 +26,6 @@ This paper supplies the biological foundation for simulating dog-like vision in 
 Dogs have dichromatic color vision and see a more limited color range than humans. They are mainly sensitive to blue-yellow differences, while red-green differences are harder for them to distinguish. My project applies this by implementing a simulated dog-like dichromatic vision pipeline. It processes everyday object images to estimate visual salience through brightness contrast and transformed color differences, producing observable metrics of object visibility rather than claiming exact replication of canine perception. This provides an approximate computer-vision simulation of dog-like dichromatic color perception.
 
 ## 5. Equations or Metrics I Can Use
-I will use at least these two (with plans for more):
 
 **1. Brightness / Luminance Approximation**  
 For an RGB image:  
@@ -38,7 +37,7 @@ This weights channels to approximate perceived luminance, crucial for simulating
 Measures how distinguishable an object is from its background in the simulated view. Higher values indicate better visibility.
 
 **Additional (Visibility Score - Beginner-friendly version):**  
-\[ \text{Visibility Score} = \text{Brightness Contrast} + \text{Color Difference} \]  
+\[\text{Visibility Score} = \text{Brightness Contrast} + \text{Color Difference} \]  
 (or weighted: \( 0.5 \times \text{Brightness Contrast} + 0.5 \times \text{Color Difference} \)). Color Difference uses Euclidean distance in transformed (dichromatic-simulated) channels.
 
 ## 6. How These Equations Connect to My Prototype
