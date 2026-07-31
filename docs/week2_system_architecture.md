@@ -26,13 +26,13 @@
 ## Part C — System Architecture Diagram
 ```mermaid
 flowchart LR
-    A[Everyday Object Images<br/>(Uploaded or Webcam)] --> B[Image Collection & Resize]
-    B --> C[Preprocessing<br/>(OpenCV resize, normalization)]
-    C --> D[Dog-Like Dichromatic Vision Simulation<br/>(Color transformation matrix)]
-    D --> E[Manual Object/Background ROI Selection]
-    E --> F[Brightness & Color Contrast Analysis]
-    F --> G[Visibility Score Calculation]
-    G --> H[Result Display<br/>(Simulated images + scores)]
-    G --> I[CSV Data Logging<br/>(Pandas)]
-    I --> J[Evaluation<br/>(Matplotlib Bar/Scatter Graphs)]
+    A["Everyday Object Images<br>(Uploaded or Webcam)"] --> B["Image Collection & Resize"]
+    B --> C["Preprocessing<br>(OpenCV resize, normalization)"]
+    C --> D["Dog-Like Dichromatic Vision Simulation<br>(Color transformation matrix)"]
+    D --> E["Manual Object/Background ROI Selection"]
+    E --> F["Brightness & Color Contrast Analysis"]
+    F --> G["Visibility Score Calculation"]
+    G --> H["Result Display<br>(Simulated images + scores)"]
+    G --> I["CSV Data Logging<br>(Pandas)"]
+    I --> J["Evaluation<br>(Matplotlib Bar/Scatter Graphs)"]
 ```
